@@ -1,0 +1,17 @@
+<div class="section">
+  <h3>Some Things I've Built</h3>
+<div>
+<div *ngFor="let project of projects">
+      <p>{{project.name}}</p>
+      <p>{{project.description}}</p>
+      <div class="container">
+<li *ngFor="let technology of project.technologies">
+  <span class="button" style="cursor: default;">
+  	{{technology}}
+  </span>
+</li>
+</div>
+</div>
+</div>
+
+</div>
