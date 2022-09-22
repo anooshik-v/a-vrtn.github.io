@@ -3,6 +3,7 @@ export interface Work {
   description:string;
   image?:string;
   link?:string;
+  demo?:string;
   year?:string;
   technologies?:string[];
 

@@ -1,8 +1,45 @@
-li{
+ul{
 	list-style: none;
 }
-span{
-	padding: 10px;
-	margin: 10px;
 
+.work-grid{
+ display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: .5rem;
+  align-items: start;
+  width: 100%;
+
+}
+
+.project-top{
+	display: flex;
+	 justify-content: space-between;
+	 margin-bottom: 8px;
+}
+.project{
+	 border-radius: 4px;
+  background-color:var(--light-navy);
+  padding: 16px;
+    box-shadow: 0 1px 0 rgb(9 45 66 / 25%);
+}
+.project-title {
+    margin: 0px 0px 10px;
+    color: var(--lightest-slate);
+    font-size: 22px;
+}
+.project-tech-list{
+ padding: 0;
+}
+.tech{
+	 display:inline;
+	color: var(--text-light);
+    font-size: small; 
+
+      padding-right: 12px;
+}
+fa-icon{
+	padding-right: 8px;
+}
+li{
+  z-index: 100;
 }

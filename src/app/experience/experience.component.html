@@ -4,25 +4,29 @@
   <div role="tablist" class="list">
 <div *ngFor="let place of places" class="place">
   <button id="place-{{place.id}}" class="places" role="tab" type="button" (click)="onSelect(place)">
-  <span>	{{place.name}}</span>
+  <span>
+    <fa-icon  *ngIf="place.technologies" icon= 'laptop-file'></fa-icon>  
+    <fa-icon  *ngIf="place.coursework" icon= 'graduation-cap'></fa-icon>  
+  </span>
+  <span>	{{place.name}} </span>
   </button>
 </div>
 </div>
 <div *ngIf="selectedPlace">
- <p>     {{selectedPlace.name}}</p>
-<p>{{selectedPlace.position}}</p>
-<p>{{selectedPlace.place}}</p>
+ <p style=" font-size: large;"> {{selectedPlace.position}} <span class="pop">@{{selectedPlace.name}}</span></p>
 <p>{{selectedPlace.duration}}</p>
+<p>{{selectedPlace.place}}</p>
 <p>{{selectedPlace.description}}</p>
-<h6 *ngIf="selectedPlace.technologies">technologies:</h6>
+<h6 *ngIf="selectedPlace.technologies">technologies i worked with:</h6>
 <li *ngFor="let technology of selectedPlace.technologies">
   <span>
-  	{{technology}}
+  	<fa-icon class="pop" icon= 'bolt'></fa-icon>  {{technology}}
   </span>
 </li>
-<h6 *ngIf="selectedPlace.coursework">coursework:</h6>
+<h6 *ngIf="selectedPlace.coursework">coursework i studied:</h6>
 <li *ngFor="let coursework of selectedPlace.coursework">
   <span>
+    <fa-icon class="pop" icon=  'pen'></fa-icon>     
   	{{coursework}}
   </span>
 </li>

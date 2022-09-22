@@ -56,3 +56,11 @@ button::selection {
     border-left: 2px solid var(--main-first);
    
 }
+
+li{
+    padding: 4px;
+}
+
+fa-icon{
+    margin-right: 8px;
+}
