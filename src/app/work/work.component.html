@@ -11,9 +11,9 @@
       </div>
       <div class="project-links">
         <a *ngIf="project.link" href="{{project.link}}" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">    
-         <fa-icon class="pop" icon="code-branch"></fa-icon>
+         <fa-icon icon="code-branch"></fa-icon>
 </a>
-        <a *ngIf="project.demo" href="{{project.demo}}" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">         <fa-icon class="pop" icon="eye"></fa-icon></a>
+        <a *ngIf="project.demo" href="{{project.demo}}" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">         <fa-icon icon="eye"></fa-icon></a>
       </div>
          </div>
          <p class="project-title"> {{project.name}}</p>
@@ -21,5 +21,3 @@
         <footer><ul class="project-tech-list"><li class="tech" *ngFor="let technology of project.technologies">
              {{technology}}</li></ul>
 </footer></li></ul></div>
-
-

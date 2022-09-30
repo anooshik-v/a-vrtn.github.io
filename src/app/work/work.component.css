@@ -1,5 +1,6 @@
 ul{
 	list-style: none;
+padding: 0;
 }
 
 .work-grid{
@@ -39,7 +40,25 @@ ul{
 }
 fa-icon{
 	padding-right: 8px;
+
+}
+a fa-icon{
+    color: var(--text-mid);
+}
+
+.folder{
+  font-size: 22px;
 }
 li{
   z-index: 100;
+}
+
+
+@media screen and (max-width: 768px) {
+.work-grid{
+   width: 90%;
+}
+}
+@media only screen (min-width: 768px){
+
 }

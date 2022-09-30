@@ -11,13 +11,8 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { LavaComponent } from './lava/lava.component';
-import { faFolderOpen } from '@fortawesome/free-solid-svg-icons';
-import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
-import { faEye } from '@fortawesome/free-solid-svg-icons';
-import { faLaptopFile } from '@fortawesome/free-solid-svg-icons';
-import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
-import { faBolt } from '@fortawesome/free-solid-svg-icons';
-import { faPen } from '@fortawesome/free-solid-svg-icons';
+import { faFolderOpen, faCodeBranch,faEye,faLaptopFile,faGraduationCap,faBolt,faPen,faBars } from '@fortawesome/free-solid-svg-icons';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,4 +41,6 @@ export class AppModule {
     library.addIcons(faGraduationCap);
     library.addIcons(faBolt);
     library.addIcons(faPen);
+    library.addIcons(faBars);
+
   } }

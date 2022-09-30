@@ -63,4 +63,15 @@ li{
 
 fa-icon{
     margin-right: 8px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+.container{
+    flex-direction: column;
+}
+}
+@media only screen (min-width: 768px){
+
 }

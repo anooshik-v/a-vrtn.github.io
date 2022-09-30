@@ -1,3 +1,51 @@
+
+ul{
+	padding: 0;
+}
+li{
+	list-style: none;
+	padding: 8px;
+	padding-bottom: 24px;
+	  display:inline;
+}
+li a {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--main-first);
+}
+li a::after {
+  content: "";
+  background:#03a9f440;
+  position: absolute;
+  left: 12px;
+  bottom: -6px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  z-index: -1;
+  transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+}
+li a:hover:after {
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+.social{
+display: block;
+}
+.button{
+      margin: 50px auto;
+}
+}
+@media only screen (min-width: 768px){
+.social, #resume{
+display: none;
+}
 .button{
 margin-top: 50px;
+margin-bottom: 50px;
+}
 }

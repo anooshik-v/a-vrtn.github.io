@@ -4,8 +4,9 @@
     bottom: 0px;
     left: 40px;
     right: auto;
-    z-index: 10;
-    color:#a8b2d1;
+    z-index: 100;
+    color: var(--text-light);
+   
 }
 ul {
     display: flex;
@@ -31,7 +32,7 @@ ul::after, .jJFfEJ::after {
     bottom: 0px;
     left: auto;
     right: 40px;
-    z-index: 10;
+    z-index: 100;
     color: var(--text-light);
     
 }
@@ -64,4 +65,13 @@ a {
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+.social, .footer, .mail{
+    display: none;
+}
+}
+@media only screen (min-width: 768px){
+
 }

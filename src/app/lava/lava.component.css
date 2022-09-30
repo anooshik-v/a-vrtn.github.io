@@ -139,3 +139,13 @@
     }
 
 }
+
+
+@media screen and (max-width: 768px) {
+.area{
+    display: none;
+}
+}
+@media only screen (min-width: 768px){
+
+}

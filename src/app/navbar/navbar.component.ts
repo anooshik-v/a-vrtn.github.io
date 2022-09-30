@@ -18,4 +18,9 @@ export class NavbarComponent implements OnInit {
     if(el)
     el.scrollIntoView({behavior:"smooth"});
   }
+  menuOnClick() {
+  document.getElementById("menu-bar")?.classList.toggle("change");
+  document.getElementById("nav")?.classList.toggle("change");
+  document.getElementById("menu-bg")?.classList.toggle("change-bg");
+  }
 }
